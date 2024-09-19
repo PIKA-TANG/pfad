@@ -8,13 +8,10 @@ import matplotlib.pyplot as plt
 from scraping_utils import get_url, parse
 
 # load the environment variables
-dotenv.load_dotenv('../../week1/src/.env')
-
-year = int(os.getenv('YEAR', 2024))
-filename = os.getenv('FILENAME', "crawled-page-{year}.html").format(year=year)
 
 # get page
-page = get_url(os.getenv('URL'), filename)
+filename = "data.csv"
+page = get_url("https://www.weather.gov.hk/tc/cis/awsYearlyExtract.htm?stn=HKA", filename)
 
 # parse the page to html
 tree = parse(page, 'html')
