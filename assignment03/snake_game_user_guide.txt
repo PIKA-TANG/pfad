@@ -1,0 +1,19 @@
+
+# Snake Game User Guide
+
+## Project Overview
+Hey Prof Gio! So, I created a Snake Game using Python and the Pygame library. It’s a classic game，you input commands by clicking the movement keys, and the little snake will move according to your instructions.
+
+## Game Rules
+1. Use the arrow keys to move the snake:
+   - Up arrow: move up
+   - Down arrow: move down
+   - Left arrow: move left
+   - Right arrow: move right
+2. Try to eat the yellow food that pops up on the screen. Every time you eat it, the snake gets longer!
+3. If you hit the edges of the screen or run into your own tail, it’s game over.
+4. If you do lose, you can press 'C' to keep playing or 'Q' to quit.
+
+## A Quick Note
+- The game window is set to 600x400 pixels.
+- The snake moves at a speed of 15 blocks per second.
